@@ -1,0 +1,332 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
+}
+body{
+    background-image: url("images/background.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+/* Scroll to Top Button */
+#myBtn{
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    z-index: 99;
+    font-size: 18px;
+    border: none;
+    outline: none;
+    background-color:#fff;
+    color: #000;
+    cursor: pointer;
+    padding: 15px;
+    border-radius: 4px;
+}
+
+/* End of Scroll to Top */
+header, .lower-section{
+    background-color:  #ffefe7;
+    border: 2px solid purple;
+   
+    /* #f0a8a8; */
+    /* #edcaca; */
+
+}
+nav.header{
+    overflow: hidden;
+    display: flex;
+    justify-content: space-around;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    overflow: hidden;
+    background-color: #E4626B;
+    /* background-color: #2832c2; */
+    position: fixed;
+    top: 0;
+    width: 100%;
+    /* background:  #f0a8a8; */
+}
+nav.header a{
+    text-decoration: none;
+    cursor: pointer;
+}
+.header .brand-name a span{
+    font-family: "DM Serif Display", sans-serif;
+    font-size: 32px;
+    text-transform: lowercase;
+    font-weight: 800;
+    color: #000;
+}
+.header .brand-name .icon{
+   display: none;
+}
+.header .navbar{
+    margin-top: 5px;
+}
+.header .navbar a{
+    font-size: 18.8px;
+    font-family: Oswald, sans-serif;
+    padding-right: 10px;
+    color: #000;
+}
+.header .nav-link a i{
+    font-size: 1.5rem;
+    padding-right: 10px;
+    color: #000;
+}
+.header .icon i{
+    font-size: 1.5rem;
+    color: #000;
+}
+
+/* intro section */
+header .intro-section{
+    display: flex;
+    justify-content: space-around;
+    width: 90%;
+    margin-left: 5%;
+    margin-top: 100px;
+   
+}
+header .intro-section .main-text{
+    width: 40%;
+}
+
+header .intro-section .main-text img{
+    width: 80%;
+}
+header .intro-section .main-text p{
+    line-height: 25px;
+    padding-bottom: 10px;
+    text-align: justify;
+}
+#about-me{
+    margin-bottom: 15px;
+}
+header .intro-section .main-text h1{
+    font-size: 45px;
+    padding-bottom: 0px;
+}
+header .intro-section .main-text a{
+    border: 1px solid #E4626B;
+    color: #fff;
+    text-align: center;
+    padding: 10px 20px;
+    text-transform: uppercase;
+    font-size: 18px;
+    background-color: #E4626B;
+    text-decoration: none;
+    margin-top: 3%;
+   
+}
+
+/* TOOLS CONTAINER */
+header .tools-container{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+header .tools-container img{
+    max-width: 80px;
+    margin: 3%;
+    height: 150px;
+}
+
+/* PROJECTS */
+projects{
+    margin-top: 150px;
+}
+.projects h2{
+    text-align: center;
+    font-size: 35px;
+    padding: 30px;
+}
+.projects-first{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 70%;
+    margin-left: 15%;
+    margin-bottom: 50px;
+    /* border: 2px solid orange; */
+}
+.projects-first .projects-img{
+    width: 80%;
+    margin-right: 5%;
+}
+.projects-first .projects-img img{
+    width: 100%;
+}
+.projects-first .project-description p, .about-container .about-text p{
+    padding: 10px;
+    line-height: 25px;
+    text-align: justify;
+}
+.projects-first .project-description h3, .about-container  .about-text h3 {
+    font-weight: 900;
+    padding: 10px;
+    font-size: 32px;
+}
+.projects-first .project-description .tools button{
+    padding: 10px 40px;
+    font-size: 18px;
+    border: 2px solid#E4626B;
+    color: #000;
+    margin: 10px;
+    background-color: transparent;
+}
+.projects-first .project-description .display-project{
+    /* margin: 20px 10px; */
+    display: flex;
+}
+.projects-first .project-description .display-project a{
+    border: 1px solid #E4626B;
+    color: #fff;
+    text-align: center;
+    padding: 10px 15px;
+    text-transform: uppercase;
+    font-size: 16px;
+    background-color: #E4626B;
+    text-decoration: none;
+    margin: 2%;
+    cursor: pointer;
+    text-overflow: hidden;
+    
+}
+
+/* YOUTUBE CHANNEL */
+.youtube-channel{
+    display: flex;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    margin: 40px 15%;
+}
+.youtube-channel iframe{
+    border: none;
+    width: 100%;
+    height: 400px;
+    margin: auto
+}
+
+/* ABOUT ME */
+.lower-section .about-container{
+    display: flex;
+    width: 80%;
+    margin-left: 10%;
+    margin-top: 2%;
+    justify-content: center;
+}
+.about-container .about-img{
+    width: 100%;
+    height: 300px;
+}
+.about-container .about-img img{
+    height: inherit;
+    width: inherit;
+}
+.about-container .about-text{
+    margin-left: 50px;
+    text-align: justify;
+}
+
+/* CONTACT FORM */
+.contact-container{
+    display: flex;
+    justify-content: flex-start;
+    width: 80%;
+    margin-left: 15%;
+    margin-bottom: 50px;
+}
+.contact-container .contact-details{
+    width: 35%;
+    margin-right: 5%;
+    display: flex;
+    flex-direction: column;
+}
+.contact-container .contact-details h3{
+    font-weight: 900;
+    padding: 10px;
+    font-size: 32px;
+}
+.contact-container .contact-details p{
+    padding: 10px;
+    line-height: 25px;
+    text-align: justify;
+}
+.contact-container .contact-details .contact-link{
+    display: flex;
+    justify-content: space-around;
+    
+}
+.contact-container .contact-details .contact-link a i{
+    font-size: 80px;
+    color: #E4626B;
+    cursor: pointer;
+}
+.contact-container .contact-form{
+    width: 40%;
+}
+.contact-container .contact-form .input-form{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+.contact-container .contact-form .input-form label{
+    padding: 10px 0px;
+    font-weight: 900;
+}
+.contact-container .contact-form .input-form input{
+    padding: 10px;
+    width: 100%;
+    height: 40px;
+    outline: none;
+
+}
+.contact-container .contact-form .input-form textarea{
+    padding: 10px;
+    width: 100%;
+    height: 70px;
+    resize: none;
+    outline: none;
+
+}
+.contact-container .contact-form .input-form button{
+    border: 1px solid #E4626B;
+    color: #fff;
+    text-align: center;
+    padding: 10px 10px;
+    text-transform: uppercase;
+    font-size: 18px;
+    background-color: #E4626B;
+    cursor: pointer;
+    width: 50%;
+    margin-left: 25%;
+    margin-top: 10px;
+}
+
+/* FOOTER SECTION */
+footer{
+    display: flex;
+    justify-content: space-between;
+    background-color: #000;
+}
+footer p{
+    padding: 20px;
+    color: #fff;
+}
+footer .footer-icon{
+    display: flex;
+    justify-content: space-between;
+}
+footer p a {
+    color: #fff;
+    font-size: 25px;
+    padding-left: 20px;
+}

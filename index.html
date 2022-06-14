@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>PORTFOLIO WEBSITE</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="media-query.css">
+</head>
+<body>
+    <!-- SCROLL TO TOP BUTTON -->
+    <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fa fa-arrow-up"></i></button>
+    <!-- hEADER Section -->
+    <header>
+        <nav class="header" id="myTopNav">
+            <div class="brand-name">
+                <a href=""><span> Abdul-Rahmon</span></a>
+                <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                    <i class="fa fa-bars"></i>
+            </a>
+            </div>
+            <div class="navbar">
+                <a href="#">HOME</a>
+                <a href="#projects">PROJECTS</a>
+                <a href="#about">ABOUT</a>
+                <a href="#contact">CONTACT</a>
+            </div>
+            <div class="nav-link">
+                <a href="https://www.twitter.com/hajji_rahmon" target="_blank"><i class="fa fa-twitter"></i></a>
+                <a href="https://www.github.com/adebayo3035" target="_blank"><i class="fa fa-github"></i></a>
+                <a href="https://linkedin.com/adebayoabdulrahmon" target="_blank"><i class="fa fa-linkedin-square"></i></a>
+                
+            </div>
+            
+        </nav>
+        
+        <!-- INTRO SECTION -->
+        <main class="intro-section">
+            <div class="main-text">
+                    
+                <h1> I am a frontend web developer</h1>
+                <p> <em> Hello, I'm Rahmon. I design and code beautifully simple things.</em></p>
+                <p id="about-me"> My social media knowledge and experience of content creation help me to deliver beautiful websites with JavaScript, React and TailwindCSS.</p>
+                <a href="#contact" id="contactBtn">Get in Touch</a>
+                <!-- <p id ="screen-size">The width of the Screen is</p> -->
+            </div>
+
+            <div class="main-text" id="main-img">
+                 <img src="images/proud_coder.svg" alt="My Picture" id="intro-image1">
+                 <img src="images/media_developer.svg" alt="My Picture" id="intro-image2">
+            </div>
+        </main>
+
+        <!-- TOOLS -->
+        <section class="tools-container">
+                   <img src="images/html-icon.png" alt="HTML ICON">
+                   <img src="images/css.png" alt="CSS ICON">
+                   <img src="images/javascript.png" alt="JAVASCRIPT ICON">
+                   <img src="images/React-icon.png" alt="REACT JS ICON">
+                   <img src="images/boostrap.png" alt="BOOTSTRAPL ICON">
+                   <img src="images/php.png" alt="PHP ICON">
+        </section>
+
+        <!-- PROJECTS -->
+        <section class="projects" id="projects">
+            <h2> Projects</h2>
+            <div class="projects-first">
+                <div class="projects-img">
+                    <img src="images/portfolio/1.png" alt="Project 1"/>
+                </div>
+                <div class="project-description">
+                    <h3> Cotta and Cush App Clone</h3>
+                    <p> An Order Summary Component, that the displays the summary of a transaction made. It was designed using HTML and CSS</p>
+                    <div class="tools">
+                        <button> HTML</button>
+                        <button> CSS</button>
+                    </div>
+                    <div class="display-project">
+                            <a href="https://www.cottacushclone.netlify.app" target="_blank"> LIVE</a>
+                            <a href="https://www.github.com/cotta-and-cush" target="_blank"> GITHUB</a>
+                            <a href="https://www.cottacush.com" target="_blank">CASE STUDY</a>
+                    </div>
+                </div>
+            </div>
+            <div class="projects-first">
+                    <div class="projects-img">
+                        <img src="images/portfolio/2.png" alt="Project 4"/>
+                    </div>
+                    <div class="project-description">
+                        <h3> Order Sumary Component</h3>
+                        <p> An Order Summary Component, that the displays the summary of a transaction made. It was designed using HTML and CSS</p>
+                        <div class="tools">
+                            <button> HTML</button>
+                            <button> CSS</button>
+                        </div>
+                        <div class="display-project">
+                                <a href="https://www.adebayo-order-summary-component.netlify.app/"target="_blank"> LIVE</a>
+                                <a href="https://www.github.com/order-summary"target="_blank"> GITHUB</a>
+                                <a href="https://www.frontendmentor.io/challenges/order-summary-component-QlPmajDUj"target="_blank">CASE STUDY</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="projects-first">
+                        <div class="projects-img">
+                            <img src="images/portfolio/3.png" alt="Project 6"/>
+                        </div>
+                        <div class="project-description">
+                            <h3> Restaurant Web App</h3>
+                            <p> An Order Summary Component, that the displays the summary of a transaction made. It was designed using HTML and CSS</p>
+                            <div class="tools">
+                                <button> HTML</button>
+                                <button> CSS</button>
+                                <button> JavaScript</button>
+                            </div>
+                            <div class="display-project">
+                                <a href=""> LIVE</a>
+                                <a href="">GITHUB</a>
+                                <a href="">CASE STUDY</a>
+                            </div>
+                        </div>
+                    </div>
+        </section>
+    </header>
+
+    <div class="youtube-channel">
+            <iframe src="https://www.youtube.com/embed/RuEwq1FZhaM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+    </div>
+    <section class="lower-section">
+        <!-- ABOUT ME -->
+        <section class="about-container" id="about">
+            <div class="about-img">
+                <img src="images/rahmon.jpg" alt=" About Myself" />
+            </div>
+    
+            <div class="about-text">
+                <h3> Who am I?</h3>
+                <p> I am a self-taught frontend developer in Nigeria. I'm also a football player who plays and love football very well (or at least
+                    that’s what people tell me).</p>
+                <p> My background is in desktop application development using Visual Basic. My social media knowledge and experience of content
+                    creation help me to deliver beautiful websites with JavaScript, React and TailwindCSS.</p>
+            </div>
+        </section>
+
+        <!-- CONTACT FORM -->
+        <section class="contact-container" id="contact">
+            <div class="contact-details">
+                <h3> Get in Touch</h3>
+                <p> You can find me on Twitter for a chat or LinkedIn for something a bit more professional. Come say hello, I’d love to hear from you.</p>
+                <p> If you have a role you would like to discuss or a general enquiry please complete the form.</p>
+
+                <div class="contact-link">
+                        <a href="https://www.twitter.com/hajji_rahmon" target="_blank"><i class="fa fa-twitter"></i></a>
+                        <a href="https://www.github.com/adebayo3035" target="_blank"><i class="fa fa-github"></i></a>
+                        <a href="https://linkedin.com/adebayoabdulrahmon" target="_blank"><i class="fa fa-linkedin-square"></i></a> 
+                </div>
+            </div>
+
+            <div class="contact-form">
+                <div class="input-form">
+                    <label> Name</label>
+                    <input type="text" name="customer_name"placeholder="Enter Your Name">
+                </div>
+                <div class="input-form">
+                    <label> E-mail</label>
+                    <input type="text" name="customer_name" placeholder="Enter Your E-mail">
+                </div>
+                <div class="input-form">
+                    <label> Message</label>
+                    <textarea placeholder="Enter Your Message"></textarea>
+                </div>
+                <div class="input-form">
+                        <button> Submit</button>
+                    </div>
+            </div>
+
+            <!-- FOOTER SECTION -->
+            
+        </section>
+        <footer>
+                <p>  Rahmon Jago &copy; 2022 </p>
+                <p class="footer-icon"> 
+                     <a href="https://www.twitter.com/hajji_rahmon" target="_blank"><i class="fa fa-twitter"></i></a>
+                     <a href="https://www.github.com/adebayo3035" target="_blank"><i class="fa fa-github"></i></a>
+                     <a href="https://linkedin.com/adebayoabdulrahmon" target="_blank"><i class="fa fa-linkedin-square"></i></a> 
+                </p>
+             
+         </footer>
+    </section>
+
+
+    <script src="main.js"></script>
+</body>
+</html>

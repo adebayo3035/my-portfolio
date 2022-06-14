@@ -1,0 +1,131 @@
+@media screen and (min-width: 770px){
+     #intro-image2{
+        display: none;
+    }
+     #intro-image1{
+        display: block;
+    }
+}
+@media screen and (max-width: 1000px){
+    header .intro-section{
+        width: 100%;
+        margin: 0;
+        margin-top: 100px;
+    }
+    header .intro-section .main-text{
+        width: 45%;
+        margin-left: 5%;
+    }
+    .projects-first, .about-container{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        width: 90%;
+        margin-left: 5%;
+        margin-bottom: 20px;
+        height: fit-content;
+        flex-wrap: wrap;
+        /* border: 2px solid orange; */
+    }
+    .about-container{
+        margin-top: 20%;
+        width: 90%;
+        margin-left: 5%;
+    }
+    .about-container .about-img{
+        width: 90%;
+        align-content: center;
+        order: 2;
+    }
+    .about-container .about-img img{
+        width: 100%;
+        /* margin-left: 15%; */
+        max-height: 300px;
+        border-radius: 10%;
+        max-width: 800px;
+    }
+    .about-container .about-text{
+        margin-left: 0;
+    }
+}
+@media screen and (max-width: 770px){
+     #intro-image2{
+        display: block;
+    }
+     #intro-image1{
+        display: none;
+    }
+    header .intro-section .main-text h1{
+        font-size: 30px;
+        padding-bottom: 0px;
+    }
+    header .intro-section{
+        flex-direction: column-reverse;
+        justify-content: center;
+        margin-top: 50px;
+    }
+    header .intro-section .main-text{
+        width: 90%;
+        margin: 3%;
+    }
+    header .intro-section #main-img img{
+      width: 100%;
+      /* margin: auto; */
+      height: auto;
+      margin-left: 0%;
+    }
+    .contact-container{
+        flex-direction: column;
+        width: 100%;
+        margin: 0;
+    }
+    .contact-container .contact-details{
+        width: 90%;
+        margin-left: 5%; 
+    
+    }
+    .contact-container .contact-form{
+        width: 90%;
+        margin-left : 5%;
+    }
+    .contact-container .contact-form input{
+        width: 100%;
+    }
+    .contact-container .contact-form .input-form button{
+        width: 30%;
+        margin-left: 35%;
+    }
+}
+
+
+/* NAVIGATION BAR */
+@media screen and (max-width: 960px){
+    nav.header{
+        width: 100%;
+        margin: auto;
+        flex-direction: column;
+    }
+    .header  .navbar{
+        display: none;
+    }
+    .header .nav-link{
+        display: none;
+    }
+    .header .brand-name .icon{
+        display: inline;
+        float: right;
+        padding: 10px;
+    }
+    .responsive .navbar{
+        display: block;
+        text-align: center;
+    }
+    .responsive .navbar a{
+        display: block;
+        padding: 20px;
+        font-weight: 500;
+        font-size: 26px;
+        
+    }
+}
