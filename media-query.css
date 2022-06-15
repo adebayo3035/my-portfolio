@@ -9,8 +9,8 @@
 @media screen and (max-width: 1000px){
     header .intro-section{
         width: 100%;
-        margin: 0;
-        margin-top: 100px;
+        /* margin: 0; */
+        /* margin-top: 100px; */
     }
     header .intro-section .main-text{
         width: 45%;
@@ -27,6 +27,13 @@
         height: fit-content;
         flex-wrap: wrap;
         /* border: 2px solid orange; */
+    }
+    .projects-first .projects-img{
+        width: 80%;
+    }
+    .projects-first .project-description{
+        width: 80%;
+        
     }
     .about-container{
         margin-top: 20%;
@@ -50,7 +57,7 @@
     }
 }
 @media screen and (max-width: 770px){
-     #intro-image2{
+    #intro-image2{
         display: block;
     }
      #intro-image1{

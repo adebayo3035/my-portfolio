@@ -32,7 +32,7 @@ body{
 /* End of Scroll to Top */
 header, .lower-section{
     background-color:  #ffefe7;
-    border: 2px solid purple;
+    /* border: 2px solid purple; */
    
     /* #f0a8a8; */
     /* #edcaca; */
@@ -55,6 +55,10 @@ nav.header{
 nav.header a{
     text-decoration: none;
     cursor: pointer;
+}
+nav.header a:hover{
+    color: #fff;
+    transition: 0.3s ease-in all;
 }
 .header .brand-name a span{
     font-family: "DM Serif Display", sans-serif;
@@ -91,7 +95,7 @@ header .intro-section{
     justify-content: space-around;
     width: 90%;
     margin-left: 5%;
-    margin-top: 100px;
+    margin-top: 80px;
    
 }
 header .intro-section .main-text{
@@ -139,29 +143,33 @@ header .tools-container img{
 }
 
 /* PROJECTS */
-projects{
-    margin-top: 150px;
+.projects{
+    margin-top: 0;
 }
 .projects h2{
     text-align: center;
     font-size: 35px;
-    padding: 30px;
+    padding: 10px;
 }
 .projects-first{
     display: flex;
     justify-content: center;
-    align-items: center;
+    /* align-items: center; */
     width: 70%;
     margin-left: 15%;
-    margin-bottom: 50px;
-    /* border: 2px solid orange; */
+    margin-bottom: 30px;
 }
 .projects-first .projects-img{
-    width: 80%;
-    margin-right: 5%;
+    width: 50%;
+    margin-right: 30px;
+    
 }
 .projects-first .projects-img img{
     width: 100%;
+    /* max-width: 400px; */
+}
+.project-description{
+    width: 50%;
 }
 .projects-first .project-description p, .about-container .about-text p{
     padding: 10px;
@@ -197,7 +205,20 @@ projects{
     margin: 2%;
     cursor: pointer;
     text-overflow: hidden;
-    
+}
+.projects .view-more{
+    /* background-color: #E4626B; */
+    text-align: center;
+    text-decoration: none;
+    font-size: 25px;
+    padding: 10px 30px;
+    color: #000; 
+    font-weight: 900;
+    display: flex;
+    justify-content: center;
+}
+.projects .view-more:hover{
+    color: #E4626B;
 }
 
 /* YOUTUBE CHANNEL */
