@@ -135,7 +135,7 @@
         display: none;
     }
     .header .brand-name .icon{
-        display: inline;
+        display: flex;
         float: right;
         padding: 10px;
     }

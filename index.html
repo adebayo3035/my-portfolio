@@ -165,26 +165,37 @@
                 </div>
             </div>
 
+              <!-- The Modal -->
+<div id="myModal" class="modal">
+
+        <!-- Modal content -->
+        <div class="modal-content">
+          <span class="close">&times;</span>
+          <p>Your message has been received Successfully..</p>
+        </div>
+      
+      </div>
+      <!-- eND OF mODAL bOX -->
+
             <div class="contact-form">
-                <!-- <form action="" method="POST" name="contact" data-netlify="true"> -->
+                <form method="POST" action ="https://script.google.com/macros/s/AKfycbxFwO44lT2yTQDROWFWg0D8d1ns4NBOCR2APIwHlSGxSirLplRdIEDA_qy0JWf9Qf3C/exec">
                     <div class="input-form">
                         <label> Name</label>
-                        <input type="text" id="customer_name" name="customer_name" placeholder="Enter Your Name">
+                        <input type="text" id="customer_name" name="Name" placeholder="Enter Your Name" required="true">
                     </div>
                     <div class="input-form">
                         <label> E-mail</label>
-                        <input type="text" id="customer_email" name="customer_email" placeholder="Enter Your E-mail">
+                        <input type="email" id="customer_email" name="Email" placeholder="Enter Your E-mail" required="true">
                     </div>
                     <div class="input-form">
                         <label> Message</label>
-                        <textarea placeholder="Enter Your Message" id="message" name="subject"></textarea>
+                        <textarea placeholder="Enter Your Message" id="message" name="Message" required="true"></textarea>
                     </div>
                     <div class="input-form">
-                        <button> Submit</button>
+                        <button id="submitBtn" type="submit"> Submit</button>
                     </div>
-                <!-- </form> -->
+                </form>
             </div>
-
             <!-- FOOTER SECTION -->
             
         </section>
