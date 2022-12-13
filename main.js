@@ -66,7 +66,9 @@ window.onclick = function(event) {
 // Light and Dark Mode Toggle
 let darkToggle = document.querySelector('#darkToggle');
 let header = document.getElementById('header');
+let lowerSection = document.getElementById('lower-section')
 
 darkToggle.addEventListener('change', ()=> {
   header.classList.toggle('dark');
+  lowerSection.classList.toggle('dark')
 })
