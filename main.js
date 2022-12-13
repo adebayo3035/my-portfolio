@@ -67,8 +67,10 @@ window.onclick = function(event) {
 let darkToggle = document.querySelector('#darkToggle');
 let header = document.getElementById('header');
 let lowerSection = document.getElementById('lower-section')
+let projects = document.querySelector('.projects')
 
 darkToggle.addEventListener('change', ()=> {
   header.classList.toggle('dark');
   lowerSection.classList.toggle('dark')
+  projects.classList.toggle('dark')
 })

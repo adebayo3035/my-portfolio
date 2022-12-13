@@ -38,6 +38,15 @@ header, .lower-section{
     background-color: #000;
     color: #fff;
 }
+.view-moreDark{
+    color: #fff;
+    text-align: center;
+    font-size: 25px;
+    padding: 10px 30px;
+    font-weight: 900;
+    display: flex;
+    justify-content: center;
+}
 nav.header{
     /* overflow: hidden; */
     display: flex;
