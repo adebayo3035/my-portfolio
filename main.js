@@ -62,3 +62,11 @@ window.onclick = function(event) {
     location.reload();
   }
 }
+
+// Light and Dark Mode Toggle
+let darkToggle = document.querySelector('#darkToggle');
+let header = document.getElementById('header');
+
+darkToggle.addEventListener('change', ()=> {
+  header.classList.toggle('dark');
+})

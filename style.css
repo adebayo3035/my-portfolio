@@ -31,26 +31,24 @@ body{
 
 /* End of Scroll to Top */
 header, .lower-section{
-    background-color:  #ffefe7;
-    /* border: 2px solid purple; */
-   
-    /* #f0a8a8; */
-    /* #edcaca; */
-
+    background-color:  #fff;
+    color: #000;
+}
+.dark{
+    background-color: #000;
+    color: #fff;
 }
 nav.header{
-    overflow: hidden;
+    /* overflow: hidden; */
     display: flex;
     justify-content: space-around;
-    padding-top: 20px;
-    padding-bottom: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
     overflow: hidden;
-    background-color: #E4626B;
-    /* background-color: #2832c2; */
+     background-color: #E4626B;
     position: fixed;
-    top: 0;
+    top: 5px;
     width: 100%;
-    /* background:  #f0a8a8; */
 }
 nav.header a{
     text-decoration: none;
@@ -70,8 +68,8 @@ nav.header a:hover{
 .header .brand-name .icon{
    display: none;
 }
-.header .navbar{
-    margin-top: 5px;
+.header .navbar, .header .nav-link{
+    padding: 10px;
 }
 .header .navbar a{
     font-size: 18.8px;
@@ -95,11 +93,12 @@ header .intro-section{
     justify-content: space-around;
     width: 90%;
     margin: auto;;
-    margin-top: 80px;
+    margin-top: 0px;
    
 }
 header .intro-section .main-text{
     width: 40%;
+    margin-top: 10%;
 }
 
 header .intro-section .main-text img{
@@ -114,7 +113,7 @@ header .intro-section .main-text p{
     margin-bottom: 15px;
 }
 header .intro-section .main-text h1{
-    font-size: 45px;
+    font-size: 30px;
     padding-bottom: 0px;
 }
 header .intro-section .main-text a{
@@ -209,7 +208,6 @@ header .tools-container img{
 .projects .view-more{
     /* background-color: #E4626B; */
     text-align: center;
-    text-decoration: none;
     font-size: 25px;
     padding: 10px 30px;
     color: #000; 
@@ -239,22 +237,23 @@ header .tools-container img{
 /* ABOUT ME */
 .lower-section .about-container{
     display: flex;
-    width: 80%;
-    margin-left: 10%;
+    width: 90%;
     margin-top: 2%;
+    margin: auto;
     justify-content: center;
 }
 .about-container .about-img{
-    width: 100%;
+    width: 50%;
     height: 300px;
 }
 .about-container .about-img img{
     height: inherit;
-    width: inherit;
+    width: 100%;
 }
 .about-container .about-text{
     margin-left: 50px;
     text-align: justify;
+    width: 60%;
 }
 
 /* CONTACT FORM */
@@ -396,3 +395,64 @@ footer p a {
     text-decoration: none;
     cursor: pointer;
   }
+
+  /* Light and Dark Mode Toggle Button */
+  .switch {
+    position: relative;
+    display: inline-block;
+    width: 40px;
+    height: 24px;
+  }  
+
+  .switch input { 
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #000;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 16px;
+  width: 16px;
+  left: -1px;
+  bottom: 4px;
+  background-color: #2196F3;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked + .slider {
+  background-color: #fff;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(16px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
